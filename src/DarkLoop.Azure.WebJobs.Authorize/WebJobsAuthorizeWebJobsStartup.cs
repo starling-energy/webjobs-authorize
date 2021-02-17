@@ -6,7 +6,9 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host.Bindings;
 using Microsoft.Azure.WebJobs.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("DarkLoop.Azure.WebJobs.Authorize.Tests")]
 [assembly: WebJobsStartup(typeof(WebJobsAuthorizeWebJobsStartup))]
 namespace DarkLoop.Azure.WebJobs.Authorize
 {
